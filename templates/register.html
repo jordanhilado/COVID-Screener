@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <p class="intro">Welcome to the COVID-19 Screening Tool. Our goal is to provide an online database for school administrations to keep their staff and students happy and healthy. Daily data will be required to be updated by students everyday to ensure an improvement in the safeness and quality of having safe in-person education.</p>
+    <p class="intro">Register here:</p>
+    <form class="login-register" action="/register" method="POST">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone else. All data is secure.</small>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="confirmation" placeholder="Confirm Password" type="password">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="first-name" placeholder="First Name" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="last-name" placeholder="Last Name" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="school-name" placeholder="School Name" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="age" placeholder="Age" type="text">
+        </div>
+        <select>
+            <option selected disabled value="" class="form-control">Ethnicity</option>
+            <option name="white">White</option>
+            <option name="black">Black</option>
+            <option name="latino">Latino</option>
+            <option name="asian">Asian/Pacific-Islander</option>
+            <option name="native">Native American</option>
+            <option name="other">Other or Mixed</option>
+        </select>
+        <select>
+            <option selected disabled value="" class="form-control">Occupation</option>
+            <option name="admin">Teacher/Administrator</option>
+            <option name="student">Student</option>
+        </select>
+        <button class="btn btn-primary" type="submit">Register</button>
+    </form>
+{% endblock %}

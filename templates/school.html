@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My School
+{% endblock %}
+
+{% block main %}
+<style>
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+</style>
+<h1>School Name</h1>
+<table id="customers">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Student ID</th>
+      <th>Your Status</th>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Smith</td>
+      <td>X</td>
+      <td>OK - CAN ATTEND SCHOOL</td>
+    </tr>
+  </table>
+{% endblock %}

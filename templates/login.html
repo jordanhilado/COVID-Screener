@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <p class="intro">Welcome to the COVID-19 Screening Tool. Our goal is to provide an online database for school administrations to keep their staff and students happy and healthy. Daily data will be required to be updated by students everyday to ensure an improvement in the safeness and quality of having safe in-person education.</p>
+    <p class="intro">Login here:</p>
+    <form class="login-register" action="/login" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Log In</button>
+    </form>
+{% endblock %}

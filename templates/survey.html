@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Survey
+{% endblock %}
+
+{% block main %}
+<form action="/takesurvey" method="GET">   
+    <h1>Welcome to your Daily Survey for the COVID-19 Screening Tool. Please fill out the following survey with all honesty to the best of your ability.</h1>
+    <input type="submit" value="Take Survey">
+</form> 
+{% endblock %}

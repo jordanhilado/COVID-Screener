@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Survey
+{% endblock %}
+
+{% block main %}
+<form class="question-form" action="/takesurvey" method="POST">
+    <form class="question-form">
+        <h3>1. Have you been diagnosed with COVID-19 (Coronavirus)?</h3>
+        <li><input type="radio" name="AppSource" value=c />Yes<br></li>
+        <li><input type="radio" name="AppSource" value=d />No<br></li>
+    </form><br>
+    <form class="question-form">
+        <h3>2. Have you had any cough?</h3>
+        <li><input type="radio" name="AppSource" value=c />Yes<br></li>
+        <li><input type="radio" name="AppSource" value=d />No<br></li>
+    </form><br>
+    <form class="question-form">
+        <h3>3. Have you had any fever?</h3>
+        <li><input type="radio" name="AppSource" value=c />Yes<br></li>
+        <li><input type="radio" name="AppSource" value=d />No<br></li>
+    </form><br>
+    <form class="question-form">
+        <h3>4. Have you had any difficulty breathing?</h3>
+        <li><input type="radio" name="AppSource" value=c />Yes<br></li>
+        <li><input type="radio" name="AppSource" value=d />No<br></li>
+    </form><br>
+    <form class="question-form">
+        <h3>5. Have you had any fatigue?</h3>
+        <li><input type="radio" name="AppSource" value=c />Yes<br></li>
+        <li><input type="radio" name="AppSource" value=d />No<br></li>
+    </form><br>
+    <form class="question-form">
+        <h3>6. Have you had any body aches?</h3>
+        <li><input type="radio" name="AppSource" value=c />Yes<br></li>
+        <li><input type="radio" name="AppSource" value=d />No<br></li>
+    </form><br>
+    <form class="question-form">
+        <h3>7. Have you had any headaches?</h3>
+        <li><input type="radio" name="AppSource" value=c />Yes<br></li>
+        <li><input type="radio" name="AppSource" value=d />No<br></li>
+    </form><br>
+    <form class="question-form">
+        <h3>8. Have you experienced a loss of smell or taste?</h3>
+        <li><input type="radio" name="AppSource" value=c />Yes<br></li>
+        <li><input type="radio" name="AppSource" value=d />No<br></li>
+    </form><br>
+    <form class="question-form">
+        <h3>9. Have you experienced a sore throat?</h3>
+        <li><input type="radio" name="AppSource" value=c />Yes<br></li>
+        <li><input type="radio" name="AppSource" value=d />No<br></li>
+    </form><br>
+    <form class="question-form">
+        <h3>10. Have you experienced congestion or a runny nose?</h3>
+        <li><input type="radio" name="AppSource" value=c />Yes<br></li>
+        <li><input type="radio" name="AppSource" value=d />No<br></li>
+    </form><br>
+    <form class="question-form">
+        <h3>11. Have you experienced nausea or vomiting?</h3>
+        <li><input type="radio" name="AppSource" value=c />Yes<br></li>
+        <li><input type="radio" name="AppSource" value=d />No<br></li>
+    </form><br>
+    <form class="question-form">
+        <h3>12. Have you experienced Diarrhea?</h3>
+        <li><input type="radio" name="AppSource" value=c />Yes<br></li>
+        <li><input type="radio" name="AppSource" value=d />No<br></li>
+    </form><br>
+    <form class="question-form">
+        <h3>13. Have you been in contact with anyone with COVID-19 (Coronavirus)?</h3>
+        <li><input type="radio" name="AppSource" value=c />Yes<br></li>
+        <li><input type="radio" name="AppSource" value=d />No<br></li>
+    </form><br>
+    <form class="question-form">
+        <h3>14. Has anyone at home including a family member/guardian experienced any of these listed symptoms?</h3>
+        <li><input type="radio" name="AppSource" value=c />Yes<br></li>
+        <li><input type="radio" name="AppSource" value=d />No<br></li>
+    </form><br>
+    <form class="question-form">
+        <h3>15. Have you been social distancing?</h3>
+        <li><input type="radio" name="AppSource" value=c />Yes<br></li>
+        <li><input type="radio" name="AppSource" value=d />No<br></li>
+    </form><br> 
+    <a href="/endsurvey">Submit Survey</a>
+</form>
+{% endblock %}
